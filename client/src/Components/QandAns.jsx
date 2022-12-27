@@ -34,9 +34,9 @@ const [ansContent,setAnsContent] = useState("")
 
 
       <p className='icon'><img src={Robot} alt="Robot" className=' abatarIcon' /> </p> 
-      <div className='ansWrapper' >
+      <div className='ansWrapper'  >
       {item.serverResponse == "" ? ( <Spin className='pt-1' size='large' />) : (
- <p className='p-0 qPtag'> 
+ <div className='p-0 qPtag' > 
   <Typewriter
             words={[`${item.serverResponse}`]}
             typeSpeed={40}
@@ -44,7 +44,7 @@ const [ansContent,setAnsContent] = useState("")
            
             
           />
- </p>
+ </div>
       ) }
         
         </div>

@@ -21,20 +21,11 @@ const Main = () => {
   
   const handleClick = async (inputText)=>{
     dispatch(addValue({text : inputText, serverResponse : ""}))
-    // axios.post("http://localhost:5000",{text : inputText})
-    // .then(res => setResponse({text : inputText, serverResponse : res.data.bot}))
-    // .catch(err => console.log(err))
+    axios.post("https://aibot-wies.onrender.com/",{text : inputText})
+    .then(res => setResponse({text : inputText, serverResponse : res.data.bot}))
+    .catch(err => console.log(err))
    
-   let res =  await fetch("https://mushy-cyan-kerchief.cyclic.app/",{
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        text : inputText,
-      })
-    })
-    .then(response => console.log(response))
+  
     setInputText("")
   }
  
