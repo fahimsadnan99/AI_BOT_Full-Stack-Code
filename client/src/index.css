@@ -19,7 +19,7 @@ code {
 .appWrapper {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(8, 1, 24);
+  background-color: rgb(2, 0, 7);
 }
 
 .qWrapper {
@@ -46,7 +46,7 @@ code {
 .ansWrapper {
   width: auto;
 
-  background-color: rgba(13, 1, 15, 0.432);
+  background-color: rgb(41, 13, 46);
   color: #fff;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 85% 100%, 52% 100%, 2% 100%, 2% 16%);
   font-weight: 500;
