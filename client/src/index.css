@@ -45,12 +45,12 @@ code {
 
 .ansWrapper {
   width: auto;
-  height: auto;
-  background-color: rgba(27, 2, 32, 0.753);
+
+  background-color: rgba(13, 1, 15, 0.432);
   color: #fff;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 85% 100%, 52% 100%, 2% 100%, 2% 16%);
   font-weight: 500;
-  padding: 0px 50px;
+  padding: 5px 50px;
   margin-top: 20px;
  
   font-family: 'Andika', sans-serif !important;
