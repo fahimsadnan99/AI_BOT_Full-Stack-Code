@@ -3,11 +3,11 @@ import Abatar from "../asset/21-avatar-lineal.gif"
 import Robot from "../asset/robot.gif"
 import { Space, Spin } from 'antd';
 import { Typewriter } from 'react-simple-typewriter'
-
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 const QandAns = ({data}) => {
 const [ansContent,setAnsContent] = useState("")
-
+const { speak } = useSpeechSynthesis();
 
 
  const {item,ind} = data
@@ -31,8 +31,6 @@ const [ansContent,setAnsContent] = useState("")
         </div>
       </div>
       <div className='col-12 d-flex mt-2'>
-
-
       <p className='icon'><img src={Robot} alt="Robot" className=' abatarIcon' /> </p> 
       <div className='ansWrapper'  >
       {item.serverResponse == "" ? ( <Spin className='pt-1' size='large' />) : (
@@ -46,7 +44,8 @@ const [ansContent,setAnsContent] = useState("")
           />
  </div>
       ) }
-        
+      
+        <button style={{fontSize : "20px"}} className="my-2" onClick={()=>speak({ text: item.serverResponse })}><i class="fa fa-volume-up" aria-hidden="true"></i></button>
         </div>
 
        
