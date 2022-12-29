@@ -19,12 +19,12 @@ code {
 .appWrapper {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(2, 0, 7);
+  background-color: rgba(6, 1, 19, 0.932);
 }
 
 .qWrapper {
-  background-color: rgb(26, 175, 150);
-  color: black;
+  background-color: rgb(3, 36, 30);
+  color: #fff;
   margin-top: 20px;
   width: auto !important;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 85% 100%, 52% 100%, 2% 100%, 2% 16%);
