@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Abatar from "../asset/21-avatar-lineal.gif"
 import Robot from "../asset/robot.gif"
-import { Space, Spin } from 'antd';
+import {  Spin } from 'antd';
 import { Typewriter } from 'react-simple-typewriter'
 
 
