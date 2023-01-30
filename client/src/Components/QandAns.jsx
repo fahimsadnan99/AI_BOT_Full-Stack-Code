@@ -11,13 +11,6 @@ const { speak } = useSpeechSynthesis();
 
 
  const {item,ind} = data
-//  useEffect(()=>{
-//    let index = 0;
-//    if(index < item.serverResponse.length){
-//        setAnsContent(`${ansContent}${item.serverResponse[index]} `)
-//        index++
-//    }
-//  },[ansContent])
 
 
 
