@@ -23,8 +23,8 @@ const { speak } = useSpeechSynthesis();
 
 
   return (
-    <div className='row  py-5'>
-      <div className='col-12 d-flex mt-2'>
+    <div className={`row  ${(ind == 0 )? "pt-5" : "py-2" }`}>
+      <div className='col-12 d-flex '>
       <span className='icon'  style={{borderRadius :"10px"}}><img src={Abatar} alt="abatar" className='img-fluid abatarIcon' /> </span> 
        <div className='qWrapper ' style={{ padding : "0px 50px"}}>
          <p className='p-0 qPtag'>{item.text}</p>
@@ -45,7 +45,7 @@ const { speak } = useSpeechSynthesis();
  </div>
       ) }
       
-        <button style={{fontSize : "20px"}} className="my-2" onClick={()=>speak({ text: item.serverResponse })}><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+       {item.serverResponse.length > 0 && (<button style={{fontSize : "20px"}} className="my-2" onClick={()=>speak({ text: item.serverResponse })}><i class="fa fa-volume-up" aria-hidden="true"></i></button>)}
         </div>
 
        
