@@ -21,7 +21,7 @@ const Main = () => {
   
   const handleClick = async (inputText)=>{
     dispatch(addValue({text : inputText, serverResponse : ""}))
-    axios.post("https://aibot-wies.onrender.com/",{text : inputText})
+    axios.post("https://mushy-cyan-kerchief.cyclic.app/",{text : inputText})
     .then(res => setResponse({text : inputText, serverResponse : res.data.bot}))
     .catch(err => console.log(err))
    
